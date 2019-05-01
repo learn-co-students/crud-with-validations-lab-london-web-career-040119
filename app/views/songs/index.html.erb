@@ -1,0 +1,9 @@
+<h1>Songs</h1>
+
+<%= table_for @songs do |t| %>
+  <% t.column :title, 'Title' %>
+  <% t.column :released, 'Released'%>
+  <% t.column :release_year, 'Release year' %>
+  <% t.column :artist_name, 'Artist name' %>
+  <% t.column :genre, 'Genre' %>
+<% end %>
