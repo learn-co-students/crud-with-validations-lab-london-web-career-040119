@@ -9,6 +9,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-controller-testing'
 gem 'bootsnap'
+
+gem 'easy_table'
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'capybara'
   gem 'pry'
