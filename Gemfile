@@ -11,6 +11,7 @@ gem 'rails-controller-testing'
 gem 'bootsnap'
 
 gem 'easy_table'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'capybara'

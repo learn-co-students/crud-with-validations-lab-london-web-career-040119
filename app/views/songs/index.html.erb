@@ -1,7 +1,11 @@
 <h1>Songs</h1>
 
+<%= button_to 'New song', { action: :new }, method: :get %>
+
 <%= table_for @songs do |t| %>
-  <% t.column :title, 'Title' %>
+  <% t.column :title, 'Title' do |song| %>
+    <%= link_to song.title, song %>
+  <% end %>
   <% t.column :released, 'Released'%>
   <% t.column :release_year, 'Release year' %>
   <% t.column :artist_name, 'Artist name' %>
