@@ -1,5 +1,5 @@
 <h2><%= @song.title %></h2>
-by <strong><%= @song.artist_name %></strong>
+<strong><%= @song.artist_name %></strong>
 <% if @song.released? %>
   <p>
     Released in
@@ -13,3 +13,4 @@ by <strong><%= @song.artist_name %></strong>
 </p>
 
 <%= link_to 'Edit', edit_song_path(@song) %>
+<%= link_to 'View', songs_path %>
